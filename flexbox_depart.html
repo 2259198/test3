@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1W1 - Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Propriétés du conteneur principal: la bibliothèque*/
+        #conteneur {
+            background-color: #501515;
+            width: 400px;
+            height: 700px;
+            margin: 100px auto;
+        }
+
+        /*Propriétés des étagères - conteneurs flex*/
+        #conteneur .etagere {
+            background-color: #501515;
+            border: 8px solid #802020;
+            width: 384px;
+            height: 100px;
+
+            /*Propriétés de base de la majorité des conteneurs flex*/
+
+        }
+
+        /*Propriétés des livres*/
+        .livre {
+            background-color: #fce171;
+            color: #501515;
+            text-align: center;
+            font: bold 14px Arial;
+            border: 2px solid #818106;
+        }
+
+        .vertical {
+            width: 5%;
+            height: 75%;
+        }
+
+        .horizontal {
+            width: 40%;
+            height: 15%;
+            text-align: left;
+            padding-left: 1%;
+        }
+
+
+        /*Variantes selon les étagères*/
+
+    </style>
+</head>
+
+<body>
+    <div id="conteneur">
+        <div class="etagere">
+            <div class="livre vertical">1</div>
+        </div>
+    </div>
+</body>
+
+</html>
